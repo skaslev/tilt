@@ -7,8 +7,14 @@ $(function () {
     $('#gamma').text(orientation.gamma.toFixed(2));
     var xform =
       'rotateZ(' + (-orientation.alpha) + 'deg) ' +
-      'rotateY(' + (orientation.gamma) + 'deg) ' +
-      'rotateX(' + (-orientation.beta) + 'deg) ';
-    $('#iphone').css('-webkit-transform', xform);
+      'rotateX(' + (-orientation.beta) + 'deg) ' +
+      'rotateY(' + (orientation.gamma) + 'deg) ';
+    $('#iphone').css({
+      'transform': xform,
+      '-moz-transform': xform,
+      '-webkit-transform': xform,
+      '-o-transform': xform,
+      '-ms-transform': xform
+    });
   };
 });
