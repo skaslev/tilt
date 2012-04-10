@@ -16,4 +16,4 @@ your browser to http://hostname:8080.
 
 Enjoy!
 
-![Screenshot](/screenshot.png)
+![Screenshot](https://github.com/skaslev/tilt/raw/master/screenshot.png)
