@@ -11,10 +11,4 @@ $(function () {
       'rotateX(' + (-orientation.beta) + 'deg) ';
     $('#iphone').css('-webkit-transform', xform);
   };
-  ws.onclose = function (event) {
-    console.log(event);
-  };
-  ws.onerror = function (event) {
-    console.log(event);
-  };
 });
