@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="js/out.js"></script>
+    <style>
+      body {
+        background: black;
+        color: white;
+      }
+      #iphone {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 480px;
+        -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(white));
+      }
+      #coord > li {
+        list-style-type: none;
+        float: left;
+        margin-left: 10px;
+      }
+     </style>
+   </head>
+   <body>
+     <img id="iphone" src="img/iphone4.png"/>
+     <ul id="coord">
+       <li>α: <span id="alpha">0.00</span></li>
+       <li>β: <span id="beta" >0.00</span></li>
+       <li>γ: <span id="gamma">0.00</span></li>
+     </ul>
+   </body>
+</html>
