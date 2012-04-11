@@ -6,6 +6,7 @@ $(function () {
     $('#beta').text(orientation.beta.toFixed(2));
     $('#gamma').text(orientation.gamma.toFixed(2));
     var xform =
+      'rotateX(90deg)' +
       'rotateZ(' + (-orientation.alpha) + 'deg) ' +
       'rotateX(' + (-orientation.beta) + 'deg) ' +
       'rotateY(' + (orientation.gamma) + 'deg) ';
