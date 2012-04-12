@@ -3,7 +3,8 @@ var WebSocketServer = require('ws').Server;
 
 var server = express.createServer();
 
-server.use(express.logger())
+server
+  .use(express.logger())
   .use(express.favicon())
   .use(express.static('public'))
   .use(server.router)
