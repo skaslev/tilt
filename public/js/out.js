@@ -1,6 +1,6 @@
-$(function () {
+$(function() {
   var ws = new WebSocket('ws://' + window.location.host + '/out');
-  ws.onmessage = function (event) {
+  ws.onmessage = function(event) {
     var orientation = JSON.parse(event.data);
     $('#alpha').text(orientation.alpha.toFixed(2));
     $('#beta').text(orientation.beta.toFixed(2));
