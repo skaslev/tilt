@@ -1,16 +1,18 @@
+var http = require('http');
 var express = require('express');
 var WebSocketServer = require('ws').Server;
 
-var server = express.createServer();
-
-server
+var app = express();
+app
   .use(express.logger())
   .use(express.favicon())
   .use(express.static('public'))
-  .use(server.router)
+  .use(app.router)
   .get('/in', function(req, res) {
     res.redirect('/in.html');
   });
+
+var server = http.createServer(app);
 
 var wss = new WebSocketServer({server: server});
 var in_ws, out_ws;
